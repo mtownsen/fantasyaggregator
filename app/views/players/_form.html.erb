@@ -1,0 +1,14 @@
+<%= simple_form_for(@player) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :refid %>
+    <%= f.input :image_url %>
+    <%= f.input :position %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
